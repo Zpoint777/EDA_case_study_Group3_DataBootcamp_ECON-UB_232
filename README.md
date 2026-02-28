@@ -3,7 +3,7 @@
 # Exploratory Data Analysis (EDA): Loan Default Risk
 
 ## Project Overview
-This project conducts an Exploratory Data Analysis (EDA） on loan application data to understand the key factors associated with loan default risk.  
+This project conducts an Exploratory Data Analysis (EDA）on loan application data to understand the key factors associated with loan default risk.  
 The analysis is motivated by a common challenge in consumer finance: making accurate lending decisions when applicants have limited or imperfect credit histories.
 
 By examining both current applicant characteristics and historical loan behavior, this study aims to identify patterns that distinguish likely defaulters from non-defaulters, supporting more informed credit risk assessment and decision-making.
@@ -40,33 +40,43 @@ The overall default rate in the dataset is approximately 8%, indicating a highly
 ---
 
 ## Key Findings
-The most important indicators associated with higher default risk identified in this analysis include:
+The following factors were identified as the strongest predictors of increased risk:
 
-- Low external credit score (EXT_SOURCE_3): Strong monotonic relationship with default probability.
-- Low down payment ratio: Higher upfront contribution is associated with lower default risk.
-- High interest rate group (NAME_YIELD_GROUP): Reflects risk-based pricing and higher default likelihood.
-- Long previous loan terms (CNT_PAYMENT): Longer repayment periods are linked to higher default rates.
-- Recent borrowing activity (DAYS_DECISION): More recent loans are associated with increased default risk.
-- Multiple previously refused applications: Indicates historical creditworthiness issues.
-- High borrowing frequency: A larger number of previous loans corresponds to higher default risk.
-- Zero down payment history: Suggests higher leverage and increased credit risk.
+1. External & Financial Indicators
 
-Historical behavioral variables demonstrate strong explanatory power and complement current applicant information.
+External Credit Scores (EXT_SOURCE_2/3): The strongest predictors identified. Applicants with low scores have a 11.2% default rate, compared to just 4.9% for high-scoring applicants.
+
+Income Type: "Working" individuals show a 9.6% default rate, significantly higher than "Pensioners" at 5.4%.
+
+2. Demographic & Stability Factors
+
+Education Level: Risk decreases as education increases. Lower secondary education carries a 10.9% risk, while Academic degrees drop to a mere 1.8%.
+
+Housing Type: Applicants in rented apartments or living with parents are high-risk (over 12% default rate), while those in office or co-op apartments are much more stable (6.5% – 8.5%).
+
+Family Status: Single individuals and those in civil marriages approach a 10% default rate. Widows represent the lowest risk group at 6%.
+
+3. Contractual & Behavioral Risks
+
+Contract Type: Cash loans (8.3%) are significantly riskier than Revolving loans (5.5%).
+City Registration Mismatch: A 49% increase in default risk (from 7.3% to 10.6%) was observed when an applicant's registered city did not match their work city.
+
+Loan History: Longer previous terms, zero down payments, and high frequencies of previous refusals all correlate with higher current risk.
 
 ---
 
 ## Repository Structure
 The repository is organized as follows:
 
-- `EDA_Loan_Default_Analysis.ipynb` – Jupyter Notebook containing the full exploratory data analysis, visualizations, and interpretations
-- `slides/` – A brief slide presentation summarizing the key findings
+- `EDA__activity_historyloadn_Zien.ipynb` – Jupyter Notebook containing selected visualizations and interpretations
+- `Ishaan_Banerjee_EDA_activity.ipynb` – Selected points of analysis
+- `Jasmine.ipynb` – Selected points of analysis
+- `EDA_Findings.pdf` – Detailed slide presentation of categorical and numerical findings.
 - `README.md` – Project overview, objectives, data description, and key insights
 
 ---
 
 ## Conclusion
-This exploratory analysis demonstrates that both applicant characteristics and historical loan behavior play a significant role in determining loan default risk.
+The analysis demonstrates that default risk is not driven by a single factor but by a combination of financial score and social stability. High-risk profiles are characterized by lower education levels, non-ownership housing, and informal family structures.
 
-External credit score and down payment ratio emerge as the strongest predictors, while behavioral variables such as refusal history, loan frequency, interest rate level, and borrowing recency provide additional valuable signals.
-
-These findings highlight the importance of incorporating both current financial information and past behavioral patterns into credit risk assessment and lending strategy development.
+Strategically, the data suggests that lenders can significantly mitigate risk by prioritizing applicants with higher educational attainment and more stable housing/marital status, even when traditional credit scores are intermediate.
