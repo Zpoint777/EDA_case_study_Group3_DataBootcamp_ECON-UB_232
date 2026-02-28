@@ -68,9 +68,9 @@ Loan History: Longer previous terms, zero down payments, and high frequencies of
 ## Repository Structure
 The repository is organized as follows:
 
-- `EDA__activity_historyloadn_Zien.ipynb` – Jupyter Notebook containing selected visualizations and interpretations
+- `Zien_Zhu_EDA_activity_historyloan.ipynb` – Jupyter Notebook containing selected visualizations and interpretations
 - `Ishaan_Banerjee_EDA_activity.ipynb` – Selected points of analysis
-- `Jasmine.ipynb` – Selected points of analysis
+- `Jasmine_Zhang_EDA_activity.ipynb` – Selected points of analysis
 - `EDA_Findings.pdf` – Detailed slide presentation of categorical and numerical findings.
 - `README.md` – Project overview, objectives, data description, and key insights
 
