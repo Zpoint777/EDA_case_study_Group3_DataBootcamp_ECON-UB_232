@@ -48,13 +48,19 @@ External Credit Scores (EXT_SOURCE_2/3): The strongest predictors identified. Ap
 
 Income Type: "Working" individuals show a 9.6% default rate, significantly higher than "Pensioners" at 5.4%.
 
+Loan Size (Loan-to-Income Ratio): When borrowers are split by median loan-to-income ratio, the difference in default rates is negligible. This suggests that loan size relative to income is not a strong determinant of defaulting.
+
 2. Demographic & Stability Factors
 
 Education Level: Risk decreases as education increases. Lower secondary education carries a 10.9% risk, while Academic degrees drop to a mere 1.8%.
 
+Employment Length: Applicants with short employment histories show an 8.97% default rate compared to 7.17% for those with longer employment, representing approximately a 15% increase in default risk. 
+
 Housing Type: Applicants in rented apartments or living with parents are high-risk (over 12% default rate), while those in office or co-op apartments are much more stable (6.5% – 8.5%).
 
 Family Status: Single individuals and those in civil marriages approach a 10% default rate. Widows represent the lowest risk group at 6%.
+
+City Registration Mismatch: A 49% increase in default risk is observed when an applicant’s registered city does not match their work city. Default rates rise from 7.31% to 10.61% when city registration is mismatched.
 
 3. Contractual & Behavioral Risks
 
